@@ -1,0 +1,23 @@
+// Como podemos rodar isso em um arquivo .ts sem causar erros? 
+
+// let employee = {};
+// employee.code = 10;
+// employee.name = "John";
+
+// Para esse código, temos duas possibilidades: 
+
+// let employee = {
+//     code: 10,
+//     name: "John"
+// };
+
+// ou então, podemos criar uma interface:
+
+interface Employee {
+    code: number,
+    name: string
+}
+
+let empObj = {} as Employee;
+empObj.code = 10;
+empObj.name = "John";
